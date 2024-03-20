@@ -6,6 +6,12 @@ export default {
       height: {
         vh: 'calc(100vh - 85.078px)',
       },
+      fontFamily: {
+        bebas: ['"Bebas Neue"', 'sans-serif'],
+      },
+      colors: {
+        dark: 'rgb(16 24 28)',
+      },
     },
   },
   plugins: [],

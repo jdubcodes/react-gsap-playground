@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
-    <header className='flex justify-between px-[20%] py-8 bg-black'>
+    <header className='flex justify-between px-[15%] py-6 bg-dark'>
       <a
         className='brand'
         href='https://gsap.com'
@@ -21,7 +21,7 @@ export default function Header() {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/page2'>Page 2</Link>
+            <Link to='/fromtomethod'>From & To Method</Link>
           </li>
           <li>
             <Link to='/page3'>Page 3</Link>

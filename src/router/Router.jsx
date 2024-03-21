@@ -4,6 +4,10 @@ import { Routes, Route } from 'react-router-dom'
 import { TransitionProvider } from '../context/TransitionContext'
 import TransitionComponent from '../components/Transition'
 
+// Imported pages
+import Pages from '../views/Pages'
+import FromAndToMethod from '../views/FromAndToMethod'
+
 const Router = () => {
   return (
     <TransitionProvider>
@@ -12,23 +16,16 @@ const Router = () => {
           index
           element={
             <TransitionComponent>
-              <h1 className='mt-40 bg-blue-500'>Home</h1>
+              <Pages pageName={'Home'} />
             </TransitionComponent>
           }
         />
-        <Route
-          path='/page2'
-          element={
-            <TransitionComponent>
-              <h1 className='mt-40 bg-blue-500'>Page 2</h1>
-            </TransitionComponent>
-          }
-        />
+        <Route path='/fromtomethod' element={<FromAndToMethod />} />
         <Route
           path='/page3'
           element={
             <TransitionComponent>
-              <h1 className='mt-40 bg-blue-500'>Page 3</h1>
+              <Pages pageName={'Page 3'} />
             </TransitionComponent>
           }
         />

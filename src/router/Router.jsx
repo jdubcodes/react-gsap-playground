@@ -4,9 +4,13 @@ import { Routes, Route } from 'react-router-dom'
 import { TransitionProvider } from '../context/TransitionContext'
 import TransitionComponent from '../components/Transition'
 
-// Imported pages
+// Imported views
 import Pages from '../views/Pages'
-import FromAndToMethod from '../views/FromAndToMethod'
+import GreenSock from '../views/GreenSock'
+import ScrollAnimations from '../views/ScrollAnimations'
+import TextEffects from '../views/TextEffects'
+import HorizontalScrolling from '../views/HorizontalScrolling'
+import Parallax from '../views/Parallax'
 
 const Router = () => {
   return (
@@ -20,7 +24,11 @@ const Router = () => {
             </TransitionComponent>
           }
         />
-        <Route path='/fromtomethod' element={<FromAndToMethod />} />
+        <Route path='/greensock' element={<GreenSock />} />
+        <Route path='/scrollanimations' element={<ScrollAnimations />} />
+        <Route path='/texteffects' element={<TextEffects />} />
+        <Route path='/horizontalscrolling' element={<HorizontalScrolling />} />
+        <Route path='/parallax' element={<Parallax />} />
         <Route
           path='/page3'
           element={

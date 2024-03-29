@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,4 +9,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+@layer utilities {
+  .menu-clip {
+    clip-path: circle(1% at 101% 0%);
+  }
 }

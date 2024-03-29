@@ -24,7 +24,11 @@ const MobileMenu = () => {
   useGSAP(() => {
     tl.current = gsap
       .timeline()
-      .to(navRef.current, { y: 0, duration: 1.2, ease: 'sine.out' })
+      .to(navRef.current, {
+        clipPath: 'circle(135.4% at 96% 5%)',
+        duration: 1,
+        ease: 'sine.out',
+      })
       .reverse()
   })
 
@@ -33,7 +37,7 @@ const MobileMenu = () => {
       <MobileButton handleClick={handleClick} isOpen={open} />
       <div
         ref={navRef}
-        className='h-screen w-screen fixed p-20 flex flex-col justify-around items-center gap-8 bg-dark -translate-y-[110%] z-40'
+        className='h-screen w-screen fixed p-20 flex flex-col justify-around items-center gap-8 bg-dark z-40 menu-clip'
       >
         <a
           className='brand'
@@ -48,7 +52,7 @@ const MobileMenu = () => {
           />
         </a>
         <nav>
-          <ul className='flex flex-col gap-8 text-menu-item text-center font-bebas text-[2vw]'>
+          <ul className='flex flex-col gap-8 text-primary text-center font-bebas text-[2vw]'>
             {menuItems.map((item) => (
               <li key={item.name}>
                 <Link to={item.route} onClick={handleClick}>

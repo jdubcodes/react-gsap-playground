@@ -8,9 +8,11 @@ export default {
       },
       fontFamily: {
         bebas: ['"Bebas Neue"', 'sans-serif'],
+        grotesque: ['"Darker Grotesque"', 'sans-sarif'],
       },
       colors: {
-        dark: 'rgb(16 24 28)',
+        dark: 'rgb(25, 25, 25)',
+        primary: '#fffce1',
       },
     },
   },

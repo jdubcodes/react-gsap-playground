@@ -5,13 +5,15 @@ import gsap from 'gsap'
 
 import TransitionContext from '../context/TransitionContext'
 
-const TransitionComponent = ({ children }) => {
+const TransitionComponent = ({ children, nodeRef }) => {
   const location = useLocation()
   const { toggleCompleted } = useContext(TransitionContext)
+
   return (
     <SwitchTransition>
       <Transition
         key={location.pathname}
+        nodeRef={nodeRef}
         timeout={500}
         onEnter={(node) => {
           toggleCompleted(false)

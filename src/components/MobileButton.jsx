@@ -5,7 +5,7 @@ const MobileButton = ({ handleClick, isOpen }) => {
       className='flex flex-col justify-center items-center absolute right-20 top-10 z-50'
     >
       <span
-        className={`bg-menu-item block transition-all duration-300 ease-out 
+        className={`bg-primary block transition-all duration-300 ease-out 
                       h-0.5 w-6 rounded-sm ${
                         isOpen
                           ? 'rotate-45 translate-y-1.5'
@@ -13,13 +13,13 @@ const MobileButton = ({ handleClick, isOpen }) => {
                       }`}
       ></span>
       <span
-        className={`bg-menu-item block transition-all duration-300 ease-out 
+        className={`bg-primary block transition-all duration-300 ease-out 
                       h-0.5 w-6 rounded-sm my-1 ${
                         isOpen ? 'opacity-0' : 'opacity-100'
                       }`}
       ></span>
       <span
-        className={`bg-menu-item block transition-all duration-300 ease-out 
+        className={`bg-primary block transition-all duration-300 ease-out 
                       h-0.5 w-6 rounded-sm ${
                         isOpen
                           ? '-rotate-45 -translate-y-1.5'

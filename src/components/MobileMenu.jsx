@@ -13,7 +13,6 @@ gsap.registerPlugin(useGSAP)
 const MobileMenu = () => {
   const [open, setOpen] = useState(false)
   const tl = useRef()
-  const menu = useRef()
   const navRef = useRef()
 
   const handleClick = () => {
